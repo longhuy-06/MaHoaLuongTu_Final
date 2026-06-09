@@ -13,7 +13,7 @@ export interface BB84Step {
   bobBasis: Basis;
   bobBit: Bit;
   basisMatch: boolean;
-  isError: boolean; // True if basis matched but bits are different (caused by Eve)
+  isError: boolean;
 }
 
 export interface SimulationResult {
@@ -22,6 +22,6 @@ export interface SimulationResult {
   bobKey: Bit[];
   matchingBasesCount: number;
   errorCount: number;
-  qber: number; // Quantum Bit Error Rate
+  qber: number;
   eavesdropperDetected: boolean;
 }
